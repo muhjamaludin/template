@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <?php
-include "php/show_data.php";
-// include "php/update_database.php";
+include "show_data.php";
+// include "update_database.php";
 ?>
 
 <html lang="en">
@@ -10,7 +10,7 @@ include "php/show_data.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="css/profile-arkademy.css">
+    <link rel="stylesheet" href="asset/css/profile-arkademy.css">
 </head>
 <body>
     <nav>
@@ -28,7 +28,7 @@ include "php/show_data.php";
 
     <section id="box-profile">
         <div class="img-profile">
-            <div class="photo" style="background-image: url(images/kirito-profile-picture.png);"></div>
+            <div class="photo" style="background-image: url(asset/images/kirito-profile-picture.png);"></div>
         </div>
         <div class="description">
             <h1 id="pName"><?php echo $nama ?></h1>
