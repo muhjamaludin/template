@@ -10,13 +10,17 @@ $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa ORDER BY id DESC");
     </head>
 
     <body>
-        <table width="80%" border='1'>
-            <tr>
+        <table width="80%" border='0' align='center'>
+	    <tr>
+		<td colspan='4' align='center'><h3>Data Siswa<br></h3></td>
+		<td colspan='1' align='center'><a href="add_siswa.php" align='center'>Tambah Siswa Baru<br></a></td>
+	    </tr>
+            <tr align='left'>
                 <th>NIS</th>
-                <th>Name</th>
+                <th>Nama</th>
                 <th>Kelas</th>
                 <th>Alamat</th>
-                <th>Aksi</th>
+                <th align='center'>Aksi</th>
             </tr>
             <?php
             while($siswa_data=mysqli_fetch_array($result)){
@@ -32,6 +36,6 @@ $result = mysqli_query($koneksi, "SELECT * FROM tb_siswa ORDER BY id DESC");
             ?>
         </table><br><br>
 
-        <a href="add_siswa.php">Tambah Siswa Baru</a>
+        
     </body>
 </html>
